@@ -3,7 +3,7 @@ import {
   generarNumeroCarta,
   obtenerPuntosCarta,
 } from "./motor";
-import * as modelo from "./modelo";
+
 describe("obtenerMensajePlantado", () => {
   it("Deberia devolver Has sido muy conservador cuando la puntuacion es menor de 4", () => {
     //Arrange
@@ -66,7 +66,7 @@ describe("obtenerMensajePlantado", () => {
   });
 });
 
-describe(generarNumeroCarta, () => {
+describe("generarNumeroCarta", () => {
   it("Deberia comprobar que numeroAlea es mayor que 7 ", () => {
     //Arrange
 
@@ -89,7 +89,7 @@ describe(generarNumeroCarta, () => {
   });
 });
 
-describe(obtenerPuntosCarta, () => {
+describe("obtenerPuntosCarta", () => {
   it("Debería obtener el valor de la carta si es mayor de 7, es 0.5", () => {
     //Arrange
     const puntuacionEsperada = 0.5;
